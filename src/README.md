@@ -24,6 +24,8 @@ All Players
 ## TODO's: 
 1. Add Transaction logs every time a transaction takes place.
 2. Add "reset" support rather than just deleting all files.
+3. Add permissions to allow players to use the market
+4. Add settings file that allows for server hosts to modify some settings in the shop
 
 
 

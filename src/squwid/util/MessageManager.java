@@ -28,7 +28,7 @@ public class MessageManager {
             if (!(pl instanceof Player)){ continue; }
             String uuid = ((Player) pl).getUniqueId().toString().replaceAll("[-]", "");
             if (uuid.equalsIgnoreCase(sellerUUID)){
-                ((Player)pl).sendMessage(ChatColor.LIGHT_PURPLE + "YOU SOLD " + amount + " " + item + " FOR " + price);
+                ((Player)pl).sendMessage(ChatColor.LIGHT_PURPLE + "YOU SOLD " + amount + " " + item + " FOR " + price + " GOLD");
                 return;
             }
             

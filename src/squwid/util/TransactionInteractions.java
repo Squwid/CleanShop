@@ -81,13 +81,12 @@ public class TransactionInteractions {
         int i = this.useAutoInt();
         String iString = String.valueOf(i);
         String loc = item.getData() + "." + iString;
-        ss.getMarket().set(loc + ".uuid", item.getId());
-        ss.getMarket().set(loc + ".amount", item.getMatAmount());
-        ss.getMarket().set(loc + ".price", item.getPrice());
-
         List<String> saleObjects = ss.getMarket().getStringList(item.getData() + ".salelist");
         saleObjects.add(iString);
         ss.getMarket().set(item.getData() + ".salelist", saleObjects);
+        ss.getMarket().set(loc + ".uuid", item.getId());
+        ss.getMarket().set(loc + ".amount", item.getMatAmount());
+        ss.getMarket().set(loc + ".price", item.getPrice());
         ss.saveMarket();
     }
 
