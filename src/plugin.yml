@@ -1,0 +1,7 @@
+name: Shop
+main: squwid.CleanShop
+version: 1.0
+description: Shop
+commands:
+  shop:
+    description: Shop
